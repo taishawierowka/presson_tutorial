@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cómo colocar tus Press On Nails</title>
+  <title>Taisha Nails</title>
 
   <link rel="icon" type="image/png" href="https://i.postimg.cc/x8LxJC2B/isotiposinbackground.png">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
@@ -13,7 +13,6 @@
       --bg: #fdfcfa;
       --text: #442d1d;
       --muted: #7a7a7a;
-      --accent: #442d1d;
       --card: #fafafa;
       --border: #eaeaea;
     }
@@ -42,15 +41,15 @@
       margin-bottom: 60px;
     }
 
-    header h1 {
+    .brand {
       font-size: 32px;
       font-weight: 500;
       margin-bottom: 10px;
     }
 
-    header p {
-      color: var(--muted);
+    .slogan {
       font-size: 15px;
+      color: var(--muted);
     }
 
     .services {
@@ -90,8 +89,21 @@
 
     section h2 {
       font-size: 24px;
-      font-weight: 500;
       margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 16px;
+      }
+
+      .brand {
+        font-size: 26px;
+      }
+
+      section {
+        margin-top: 60px;
+      }
     }
 
   </style>
@@ -102,85 +114,113 @@
 <div class="container">
 
 <header>
-  <h1>Cómo colocar tus Press On Nails</h1>
-  <p>Guía paso a paso para una aplicación correcta desde casa</p>
+  <div class="brand">Taisha Nails</div>
+  <div class="slogan">No se explica, se lleva puesto ✨</div>
 </header>
 
-<div class="services">
-
-  <div class="service-card">
-    <div class="service-title">Prepará tus uñas</div>
-
-    <div class="muted">
-      Empujá suavemente las cutículas con el palito de naranjo.
-    </div>
-
-    <ul>
-      <li>Limá la superficie sin presionar hasta que quede opaca</li>
-      <li>Limpiá con Wipe y alcohol</li>
-    </ul>
-
-    <div class="muted">
-      Opcional <br>Utiliza el corta-cuticulas cuidadosamente para remover el exceso de cuticulas.
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="service-title">Primera capa</div>
-
-    <div class="muted">
-      Aplicá una capa fina de pegamento en cada uña.
-    </div>
-
-    <ul>
-      <li>Dejá secar completamente</li>
-      <li>Pasá la lima suavemente por encima</li>
-    </ul>
-
-    <div class="muted">
-      Mejora la adherencia y prepara la superficie para el tip.
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="service-title">Colocación</div>
-
-    <div class="muted">
-      Aplicá pegamento en la uña y también en la parte interna del tip.
-    </div>
-
-    <ul>
-      <li>Colocá el tip alineado correctamente</li>
-      <li>Presioná durante unos segundos</li>
-      <li>Evitá burbujas de aire</li>
-    </ul>
-
-    <div class="muted">
-      Una correcta colocación define la duración del servicio.
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="service-title">Último paso</div>
-
-    <div class="muted">
-      Repetí el proceso en cada uña.
-    </div>
-
-    <ul>
-      <li>Limpiá restos de pegamento con alcohol</li>
-      <li>Aplicá aceite en las cutículas</li>
-    </ul>
-
-    <div class="muted">
-      Esto mejora el acabado final y protege la piel.
-    </div>
-  </div>
-
-</div>
-
+<!-- KIT -->
 <section>
-  <h2>Cómo remover tus Press On Nails</h2>
+  <h2>¿Qué contiene tu kit?</h2>
+
+  <div class="services">
+    <div class="service-card">
+      <div class="service-title">Incluye:</div>
+
+      <ul>
+        <li>1 palito de naranjo</li>
+        <li>1 set de 10 tips/uñas personalizadas</li>
+        <li>1 corta cuticula de metal calidad premium</li>
+        <li>1 lima sponge 240</li>
+      </ul>
+
+      <div class="muted">
+        Todo lo necesario para realizar la aplicación correctamente.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLOCACIÓN -->
+<section>
+  <h2>Cómo se coloca</h2>
+
+  <div class="services">
+
+    <div class="service-card">
+      <div class="service-title">Prepará tus uñas</div>
+
+      <div class="muted">
+        Empujá suavemente las cutículas con el palito de naranjo.
+      </div>
+
+      <ul>
+        <li>Limá la superficie sin presionar hasta que quede opaca</li>
+        <li>Limpiá con Wipe y alcohol</li>
+      </ul>
+
+      <div class="muted">
+        Opcional <br>Utiliza el corta-cuticulas cuidadosamente para remover el exceso de cuticulas.
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-title">Primera capa</div>
+
+      <div class="muted">
+        Aplicá una capa fina de pegamento en cada uña.
+      </div>
+
+      <ul>
+        <li>Dejá secar completamente</li>
+        <li>Pasá la lima suavemente por encima</li>
+      </ul>
+
+      <div class="muted">
+        Mejora la adherencia y prepara la superficie para el tip.
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-title">Colocación</div>
+
+      <div class="muted">
+        Aplicá pegamento en la uña y también en la parte interna del tip.
+      </div>
+
+      <ul>
+        <li>Colocá el tip alineado correctamente</li>
+        <li>Presioná durante unos segundos</li>
+        <li>Evitá burbujas de aire</li>
+      </ul>
+
+      <div class="muted">
+        Una correcta colocación define la duración del servicio.
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-title">Último paso</div>
+
+      <div class="muted">
+        Repetí el proceso en cada uña.
+      </div>
+
+      <ul>
+        <li>Limpiá restos de pegamento con alcohol</li>
+        <li>Aplicá aceite en las cutículas</li>
+      </ul>
+
+      <div class="muted">
+        Esto mejora el acabado final y protege la piel.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- REMOCIÓN -->
+<section>
+  <h2>Cómo se remueve</h2>
 
   <div class="services">
 
@@ -237,7 +277,6 @@
     </div>
 
   </div>
-
 </section>
 
 </div>
