@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Taisha Nails</title>
 
-  <link rel="icon" type="image/png" href="https://i.postimg.cc/Qx81vJhS/Logo-By-Taisha.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/x8LxJC2B/isotiposinbackground.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">  
   
   <style>
     :root {
-      --bg: #fdfcfa;
-      --text: #442d1d;
-      --muted: #7a7a7a;
-      --card: #fafafa;
-      --border: #eaeaea;
+      --bg: #fefff0;
+      --text: #3b2f2f;
+      --muted: #8f8585;
+      --accent: #e8acb6;
+      --card: #ffffff;
+      --border: rgba(59,47,47,0.06);
     }
 
     * {
@@ -27,60 +28,100 @@
     body {
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* 🔥 FONDO MEJORADO */
+    .floating-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .floating-bg img {
+      position: absolute;
+      opacity: 0.12; /* 🔥 más visible */
+      animation: float 30s ease-in-out infinite;
+    }
+
+    /* VARIACIÓN REAL */
+    .l1 { top: 5%; left: 8%; width: 140px; opacity: 0.15; transform: rotate(-10deg); }
+    .l2 { top: 15%; left: 75%; width: 180px; opacity: 0.10; transform: rotate(8deg); }
+    .l3 { top: 25%; left: 30%; width: 150px; opacity: 0.12; }
+    .l4 { top: 40%; left: 85%; width: 200px; opacity: 0.08; transform: rotate(12deg); }
+    .l5 { top: 60%; left: 15%; width: 160px; opacity: 0.14; }
+    .l6 { top: 75%; left: 65%; width: 190px; opacity: 0.09; }
+    .l7 { top: 85%; left: 5%; width: 140px; opacity: 0.13; }
+    .l8 { top: 50%; left: 50%; width: 170px; opacity: 0.07; }
+    .l9 { top: 30%; left: 92%; width: 130px; opacity: 0.12; }
+    .l10 { top: 70%; left: 88%; width: 160px; opacity: 0.10; }
+    .l11 { top: 10%; left: 40%; width: 150px; opacity: 0.13; }
+    .l12 { top: 35%; left: 10%; width: 180px; opacity: 0.09; }
+    .l13 { top: 55%; left: 75%; width: 150px; opacity: 0.12; }
+    .l14 { top: 80%; left: 35%; width: 170px; opacity: 0.08; }
+    .l15 { top: 20%; left: 55%; width: 140px; opacity: 0.14; }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-30px); }
+      100% { transform: translateY(0px); }
     }
 
     .container {
       max-width: 1100px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 50px 20px;
+      position: relative;
+      z-index: 2;
     }
 
     header {
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 70px;
     }
 
     .brand {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: 500;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
     .slogan {
-      font-size: 15px;
+      font-size: 14px;
       color: var(--muted);
     }
 
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+      gap: 28px;
     }
 
     .service-card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 25px;
+      padding: 26px;
       display: flex;
       flex-direction: column;
       gap: 12px;
+      backdrop-filter: blur(2px);
     }
 
     .service-title {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
     }
 
     .muted {
       color: var(--muted);
-      font-size: 14px;
+      font-size: 13px;
     }
 
     ul {
       padding-left: 18px;
-      font-size: 14px;
+      font-size: 13px;
     }
 
     section {
@@ -88,28 +129,35 @@
     }
 
     section h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 16px;
-      }
-
-      .brand {
-        font-size: 26px;
-      }
-
-      section {
-        margin-top: 60px;
-      }
+      font-size: 22px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid rgba(232,172,182,0.3);
+      display: inline-block;
+      padding-bottom: 6px;
     }
 
   </style>
 </head>
 
 <body>
+
+<div class="floating-bg">
+  <img src="https://i.postimg.cc/9FCP8XRv/T.png" class="l1">
+  <img src="https://i.postimg.cc/SK2c2J3Q/Diseno-sin-titulo-(4).png" class="l2">
+  <img src="https://i.postimg.cc/Xq35zxJL/Diseno-sin-titulo-(3).png" class="l3">
+  <img src="https://i.postimg.cc/x17z2989/Diseno-sin-titulo-(2).png" class="l4">
+  <img src="https://i.postimg.cc/9FCP8XRv/T.png" class="l5">
+  <img src="https://i.postimg.cc/SK2c2J3Q/Diseno-sin-titulo-(4).png" class="l6">
+  <img src="https://i.postimg.cc/Xq35zxJL/Diseno-sin-titulo-(3).png" class="l7">
+  <img src="https://i.postimg.cc/x17z2989/Diseno-sin-titulo-(2).png" class="l8">
+  <img src="https://i.postimg.cc/Xq35zxJL/Diseno-sin-titulo-(3).png" class="l9">
+  <img src="https://i.postimg.cc/9FCP8XRv/T.png" class="l10">
+  <img src="https://i.postimg.cc/SK2c2J3Q/Diseno-sin-titulo-(4).png" class="l11">
+  <img src="https://i.postimg.cc/Xq35zxJL/Diseno-sin-titulo-(3).png" class="l12">
+  <img src="https://i.postimg.cc/x17z2989/Diseno-sin-titulo-(2).png" class="l13">
+  <img src="https://i.postimg.cc/9FCP8XRv/T.png" class="l14">
+  <img src="https://i.postimg.cc/SK2c2J3Q/Diseno-sin-titulo-(4).png" class="l15">
+</div>
 
 <div class="container">
 
@@ -118,21 +166,17 @@
   <div class="slogan">No se explica, se lleva puesto ✨</div>
 </header>
 
-<!-- KIT -->
 <section>
   <h2>¿Qué contiene tu kit?</h2>
-
   <div class="services">
     <div class="service-card">
       <div class="service-title">Incluye:</div>
-
       <ul>
         <li>1 palito de naranjo</li>
         <li>1 set de 10 tips/uñas personalizadas</li>
         <li>1 corta cuticula de metal calidad premium</li>
         <li>1 lima sponge 240</li>
       </ul>
-
       <div class="muted">
         Todo lo necesario para realizar la aplicación correctamente.
       </div>
@@ -140,140 +184,85 @@
   </div>
 </section>
 
-<!-- COLOCACIÓN -->
 <section>
   <h2>Cómo se coloca</h2>
-
   <div class="services">
-
     <div class="service-card">
       <div class="service-title">Prepará tus uñas</div>
-
-      <div class="muted">
-        Empujá suavemente las cutículas con el palito de naranjo.
-      </div>
-
+      <div class="muted">Empujá suavemente las cutículas con el palito de naranjo.</div>
       <ul>
         <li>Limá la superficie sin presionar hasta que quede opaca</li>
         <li>Limpiá con Wipe y alcohol</li>
       </ul>
-
-      <div class="muted">
-        Opcional <br>Utiliza el corta-cuticulas cuidadosamente para remover el exceso de cuticulas.
-      </div>
+      <div class="muted">Opcional <br>Utiliza el corta-cuticulas cuidadosamente para remover el exceso de cuticulas.</div>
     </div>
 
     <div class="service-card">
       <div class="service-title">Primera capa</div>
-
-      <div class="muted">
-        Aplicá una capa fina de pegamento en cada uña.
-      </div>
-
+      <div class="muted">Aplicá una capa fina de pegamento en cada uña.</div>
       <ul>
         <li>Dejá secar completamente</li>
         <li>Pasá la lima suavemente por encima</li>
       </ul>
-
-      <div class="muted">
-        Mejora la adherencia y prepara la superficie para el tip.
-      </div>
+      <div class="muted">Mejora la adherencia y prepara la superficie para el tip.</div>
     </div>
 
     <div class="service-card">
       <div class="service-title">Colocación</div>
-
-      <div class="muted">
-        Aplicá pegamento en la uña y también en la parte interna del tip.
-      </div>
-
+      <div class="muted">Aplicá pegamento en la uña y también en la parte interna del tip.</div>
       <ul>
         <li>Colocá el tip alineado correctamente</li>
         <li>Presioná durante unos segundos</li>
         <li>Evitá burbujas de aire</li>
       </ul>
-
-      <div class="muted">
-        Una correcta colocación define la duración del servicio.
-      </div>
+      <div class="muted">Una correcta colocación define la duración del servicio.</div>
     </div>
 
     <div class="service-card">
       <div class="service-title">Último paso</div>
-
-      <div class="muted">
-        Repetí el proceso en cada uña.
-      </div>
-
+      <div class="muted">Repetí el proceso en cada uña.</div>
       <ul>
         <li>Limpiá restos de pegamento con alcohol</li>
         <li>Aplicá aceite en las cutículas</li>
       </ul>
-
-      <div class="muted">
-        Esto mejora el acabado final y protege la piel.
-      </div>
+      <div class="muted">Esto mejora el acabado final y protege la piel.</div>
     </div>
-
   </div>
 </section>
 
-<!-- REMOCIÓN -->
 <section>
   <h2>Cómo se remueve</h2>
-
   <div class="services">
 
     <div class="service-card">
       <div class="service-title">Preparación</div>
-
-      <div class="muted">
-        Este método es seguro y evita dañar tu uña natural.
-      </div>
-
+      <div class="muted">Este método es seguro y evita dañar tu uña natural.</div>
       <ul>
         <li>Colocá agua tibia en un recipiente</li>
         <li>Agregá jabón y unas gotas de aceite</li>
         <li>Remojá las uñas durante 10 a 15 minutos</li>
       </ul>
-
-      <div class="muted">
-        El calor y el aceite ayudan a ablandar el pegamento.
-      </div>
+      <div class="muted">El calor y el aceite ayudan a ablandar el pegamento.</div>
     </div>
 
     <div class="service-card">
       <div class="service-title">Remoción</div>
-
-      <div class="muted">
-        Una vez que el pegamento está más flexible:
-      </div>
-
+      <div class="muted">Una vez que el pegamento está más flexible:</div>
       <ul>
         <li>Levantá suavemente los bordes con un palito de naranjo</li>
         <li>Retirá el tip sin forzar</li>
       </ul>
-
-      <div class="muted">
-        Si sentís resistencia, volvé a remojar unos minutos más.
-      </div>
+      <div class="muted">Si sentís resistencia, volvé a remojar unos minutos más.</div>
     </div>
 
     <div class="service-card">
       <div class="service-title">Cuidado final</div>
-
-      <div class="muted">
-        Finalizá el proceso cuidando tus uñas naturales.
-      </div>
-
+      <div class="muted">Finalizá el proceso cuidando tus uñas naturales.</div>
       <ul>
         <li>Eliminá restos de pegamento con alcohol o un poco de quita-esmalte</li>
         <li>Seca tus manos y finaliza aplicando aceite en cutículas</li>
       </ul>
-
-      <div class="muted">
-        Esto hidrata y protege la uña después de la remoción.
-      </div>
+      <div class="muted">Esto hidrata y protege la uña después de la remoción.</div>
     </div>
 
   </div>
